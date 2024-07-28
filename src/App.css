@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#video-header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+}
+
+#header-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the video stays in the background */
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.8); /* Slightly transparent background */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1; /* Ensure the navbar is above the video */
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px;
+  height: 85vh;
+  background: #f4f4f4;
+}
+
+h2 {
+  margin-top: 15%;
+  font-size: 3.5em; /* Larger font size */
+  text-align: center; /* Centered text */
+}
+
+p {
+  margin-top: 20px; /* Ensure the text is below the header */
+  font-size: 2em; /* Larger font size */
+  text-align: center;
+  max-width: 900px; /* Limit width of text for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto; /* Center button horizontally */
+  padding: 10px;
+  text-align: center;
+  background-color: #9b4834;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.section-button:hover {
+  background-color: #9b4934b4;
+}
+
+.icon-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.icon-button {
+  color: #fff;
+  background-color: #395a39;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 0 30px;
+  text-align: center;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: #395a39c4;
+}
